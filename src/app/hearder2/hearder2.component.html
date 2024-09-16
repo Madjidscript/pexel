@@ -1,0 +1,69 @@
+<!-- navbar.component.html -->
+<nav id="mainNavbar" class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+      <!-- Logo à gauche -->
+      <a class="navbar-brand text-black fs-4" href="#"><img src="/public/logo.jpeg" />pexels</a>
+  
+      <!-- Barre de recherche (centrée) -->
+      <!-- <form class="d-flex search-bar mx-auto" role="search">
+        <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
+      </form> -->
+
+      <div class="search">
+        <div class="select" >
+            <select name="" id="" class="custom-select" (change)="onSelectChange($event)">
+              <option [value]="opt" *ngFor="let opt of option"> <span></span> {{opt}} </option>
+             
+           </select>
+         
+        </div>
+        <div class="milieu"></div>
+        <div>
+
+            <!-- <input type="text" class="input-text" id=""  (change)="onSelectChange($event)" placeholder="rechercher des {{selectedOption}} gratuitement" > -->
+            <input type="text" class="input-text" [placeholder]="'rechercher des ' + selectedOption + ' gratuitement'" />
+        </div>
+    </div>
+
+  
+      <!-- Liens à droite -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          
+          <!-- Sous-menu pour À propos -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-black fs-4" href="#" id="apropos" role="button" >
+              Explorez
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Notre équipe</a></li>
+              <li><a class="dropdown-item" href="#">Notre histoire</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-black fs-4" aria-current="page" href="#">Licence</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-black fs-4" aria-current="page" href="#">Importer</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle pp text-black fs-4" href="#" id="apropos" >
+              ...
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Notre équipe</a></li>
+              <li><a class="dropdown-item" href="#">Notre histoire</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- Bouton Rejoindre à droite -->
+        <a href="#" class="btn btn-black ms-3 bit">Rejoindre</a>
+      </div>
+    </div>
+  </nav>
+  
+  
+  

@@ -1,0 +1,60 @@
+
+<div class="animated-box">
+    <app-hearder></app-hearder>
+
+    <div class="card-text">
+        <div class="text">
+            <h3>
+                Les plus belles photos, images et vidéos <br>
+            libres de droits partagées gratuitement <br>
+            par des créateurs talentueux.
+            </h3>
+        </div>
+        <div class="search">
+            <div class="select" >
+                <select name="" id="" class="custom-select" (change)="onSelectChange($event)">
+                  <option [value]="opt" *ngFor="let opt of option"> <span></span> {{opt}} </option>
+                 
+               </select>
+             
+            </div>
+            <div>
+
+                <!-- <input type="text" class="input-text" id=""  (change)="onSelectChange($event)" placeholder="rechercher des {{selectedOption}} gratuitement" > -->
+                <input type="text" class="input-text" [placeholder]="'rechercher des ' + selectedOption + ' gratuitement'" />
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="nav2">
+    <ul class="box">
+        <li><a [routerLink]="['/accueil/home']"  >accueil</a></li>
+        <li><a [routerLink]="['/video/home']" class="active">video</a></li>
+        <li><a href="#classement">classement</a></li>
+        <li><a href="#concours">concours</a></li>
+    </ul>
+</div>
+
+
+
+<div class="nav3">
+    <ul class="box">
+        <li><h4 > Tendance photo </h4></li>
+        <li>
+            <div class="select" >
+                <select name="" id="" class="custom-select">
+                  <option value="image"> <span></span> tendance</option>
+                  <option value="video"> <span></span> nouveau</option>
+               </select>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<app-galery></app-galery>
+
+
+
