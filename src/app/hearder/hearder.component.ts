@@ -1,9 +1,10 @@
 import { Component,HostListener, OnInit } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-hearder',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './hearder.component.html',
   styleUrl: './hearder.component.css'
 })
@@ -16,7 +17,7 @@ export class HearderComponent implements OnInit {
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
     const navbar = document.getElementById("mainNavbar");
-    if (window.scrollY > 400) {
+    if (window.scrollY > 380) {
       navbar?.classList.add("navbar-fixed");
     } else {
       navbar?.classList.remove("navbar-fixed");

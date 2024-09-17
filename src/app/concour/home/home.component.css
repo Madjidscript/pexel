@@ -1,0 +1,204 @@
+body{
+    background-color: black;
+}
+.papa{
+    width: 100%;
+    height: 90vh;
+    background-color: white;
+    border-bottom-left-radius: 65px;
+    border-bottom-right-radius: 65px;
+}
+.nav2 {
+    width: 320px;
+     /* Couleur de fond pour la navigation */
+    padding: 10px;
+    margin:20px auto ;
+  }
+  
+  .box {
+    list-style-type: none; /* Supprimer les puces des listes */
+    padding: 0;
+    margin: 0;
+    margin: 0px auto;
+    display: flex; /* Disposer les éléments en ligne */
+    justify-content: space-around; /* Espacer les éléments */
+  }
+  
+  .box li {
+    margin: 0;
+  }
+  
+  .box a {
+    text-decoration: none; /* Supprimer le soulignement des liens */
+    color: #333; /* Couleur du texte */
+    padding: 10px 20px; /* Espacement autour du texte */
+    font-size: 16px; /* Taille du texte */
+    display: block; /* Le lien prend toute la largeur du conteneur li */
+  }
+  
+  .box a.active, .box a:hover {
+    background-color: #000; /* Fond noir pour le lien actif ou au survol */
+    color: #fff; /* Couleur du texte en blanc */
+    border-radius: 25px; /* Coins arrondis */
+  }
+ #testo{
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+
+  .parent{
+    width: 60%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    /* background-color: #000; */
+  }
+  .parent .card1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    /* background-color: aqua; */
+    margin-top: 30px;
+    justify-content: space-between;
+  }
+  .card1 .boy1{
+   width: 49%;
+   height: 100%;
+   /* background-color: #333; */
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+  }
+  .boy1 img{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .card1 .boy2{
+    width: 49%;
+    height: 100%;
+    /* background-color:green; */
+    display: block;
+    justify-content: space-between;
+    flex-direction: row;
+    overflow: hidden;
+   }
+   .card1 .boy2 .child1{
+    width: 100%;
+    height: 50%;
+    margin-bottom: 3px;
+    /* background-color:yellow; */
+   }
+   .child1 img{
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+   .card1 .boy2 .child2{
+    width: 100%;
+    height: 50%;
+    /* background-color:rgb(255, 0, 204); */
+    margin-top: 3px;
+    }
+    .child2 img{
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+  .parent .card2{
+    width: 48%;
+    height: 100%;
+    /* background-color:red; */
+    padding-top: 10px;
+  }
+  .card2 .boy{
+    width: 80%;
+    height: 70px;
+    /* background-color: rosybrown; */
+    margin: 3px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+  }
+  .card2 .boy .child{
+    width: auto;
+    padding: 15px;
+    height: 50px;
+    /* background-color: rgb(30, 0, 255); */
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    font-size: 11px;
+    font-weight: bold;
+    display: flex;align-items: center;
+  }
+  #rad{
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+  }
+  .card2 .boy .bod{
+    width: auto;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    align-items: center ;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+   
+  }
+  .card2 .boy .bod1{
+    width: auto;
+    height: 50px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    padding: 15px;
+   
+  }
+
+
+  /* bouton clignote */
+  /* Style général pour le corps de la page */
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+} */
+
+/* Style du point clignotant */
+.blinking-dot {
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    animation: blink-animation 1s infinite;
+}
+
+/* Définition de l'animation de clignotement */
+@keyframes blink-animation {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+
+.care {
+    width: 15px;
+    height: 15px;
+    background-color:#333;
+    border-radius: 50%;
+    animation: blink-animation 1s infinite;
+}
+

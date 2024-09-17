@@ -4,72 +4,87 @@
     display: flex;
     flex-direction: column;
     padding: 10px 50px;
-  }
-  
-  
-  /* Barre de recherche centrée, cachée par défaut */
-  .search-bar {
+    /* Assurez-vous que la couleur de fond est définie */
+    width: 100%; /* Assurez-vous que la largeur est 100% */
+    /* position: fixed; */
+    margin-bottom: 100px;
+}
+
+/* Barre de recherche centrée, cachée par défaut */
+.search-bar {
     display: none; /* Cachée par défaut */
     max-width: 300px; /* Limite la taille de la barre de recherche */
     flex-grow: 1;
-  }
-  .nav-link.dropdown-toggle.pp::after {
+}
+
+/* Supprime l'icône du chevron */
+.nav-link.dropdown-toggle.pp::after {
     display: none; /* Supprime l'icône du chevron */
-  }
-  
-  /* Lorsque la navbar devient fixe */
-  .navbar-fixed {
+}
+
+/* Lorsque la navbar devient fixe */
+.navbar-fixed {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 9999;
-   /* Fond blanc pour la navbar fixe */
+    /* Fond blanc pour la navbar fixe */
+    background-color: white; /* Assurez-vous que la couleur de fond est définie */
     box-shadow: 0 4px 6px rgba(126, 117, 117, 0.1); /* Ombre portée légère */
-  }
-  
-  /* Afficher la barre de recherche lorsque la navbar est fixe */
-  .navbar-fixed .search-bar {
+}
+
+/* Afficher la barre de recherche lorsque la navbar est fixe */
+.navbar-fixed .search-bar {
     display: flex; /* Afficher la barre de recherche */
-    display: none;
-  }
-  
-  /* Cacher le sous-menu par défaut */
-  .navbar-nav .dropdown-menu {
+}
+
+/* Cacher le sous-menu par défaut */
+.navbar-nav .dropdown-menu {
     display: none;
     opacity: 0;
     transition: opacity 0.3s ease;
-  }
-  
-  /* Afficher le sous-menu lors du hover */
-  .navbar-nav .dropdown:hover .dropdown-menu {
+}
+
+/* Afficher le sous-menu lors du hover */
+.navbar-nav .dropdown:hover .dropdown-menu {
     display: block;
     opacity: 1;
     position: absolute;
+    padding: 10px;
+    color: black;
+}
+.dropdown-menu li a {
+    color: black;
   }
-  
 
-
-
-  .search{
-    width: 40%;
+/* Styles de la barre de recherche */
+.search {
+    width: auto;
     height: 50px;
     display: flex;
+    align-items: center; /* Centrer verticalement */
     margin-top: 20px;
-    border:1px solid rgb(46, 45, 45) ;
-    background-color: #fff;
-    border-radius:5px ;
+    border: 1px solid rgb(46, 45, 45);
+    background-color: #fff9f991;
+    border-radius: 5px;
     padding: 5px;
 }
 
+/* Style du placeholder dans la barre de recherche */
 input[type="text"]::placeholder {
-  color: #888; /* Remplacez #888 par la couleur souhaitée */
-  font-style: italic; /* Vous pouvez également appliquer d'autres styles comme l'italique */
- 
+    color: #888; /* Remplacez #888 par la couleur souhaitée */
+    font-style: italic; /* Vous pouvez également appliquer d'autres styles comme l'italique */
+    font-size: 13px;
 }
-input[type="text"]{
-  margin-top: 4px;
+
+/* Style du champ de texte */
+input[type="text"] {
+    margin-top: 4px;
+    width: 100%; /* Assurez-vous que le champ de texte prend la largeur disponible */
 }
- .select{
+
+/* Style du select */
+.select {
     width: 100px;
     padding: 0px;
     display: flex;
@@ -77,31 +92,42 @@ input[type="text"]{
     text-align: center;
     background-color: rgb(226, 223, 223);
     color: black;
-    border-radius:5px;
+    border-radius: 5px;
     border: 1px solid rgb(46, 45, 45);
     margin-left: 15px;
     height: 35px;
 }
+
+/* Style du select personnalisé */
 .custom-select {
     border: none;          /* Supprime la bordure */
     outline: none;         /* Supprime le contour de focus par défaut */
     background: transparent; /* Optionnel : rend le fond transparent pour une apparence plus épurée */
-  }
-  .input-text{
+}
+
+/* Style du champ de texte personnalisé */
+.input-text {
     border: none;          /* Supprime la bordure */
     outline: none;         /* Supprime le contour de focus par défaut */
     background: transparent;
     margin-left: 20px;
     width: 240px;
-  }
+}
 
- .bit{
+/* Style de l'élément bit */
+.bit {
     background-color: rgb(144, 223, 223);
     color: white;
     padding: 10px;
- }
- .milieu{
+}
+
+/* Style de la ligne de séparation */
+.milieu {
     width: 1px;
     background-color: #ccc;
     margin-left: 15px;
- }
+}
+
+a{
+    text-decoration: none;
+  }

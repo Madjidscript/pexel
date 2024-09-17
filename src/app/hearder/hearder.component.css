@@ -38,6 +38,11 @@
     display: none;
     opacity: 0;
     transition: opacity 0.3s ease;
+    padding: 10px;
+    color: black;
+  }
+  .dropdown-menu li a {
+    color: black;
   }
   
   /* Afficher le sous-menu lors du hover */
@@ -56,4 +61,8 @@
     font-style: italic; /* Vous pouvez également appliquer d'autres styles comme l'italique */
     font-size: 15px;
    
+  }
+
+  a{
+    text-decoration: none;
   }

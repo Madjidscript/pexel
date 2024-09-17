@@ -50,7 +50,7 @@
       margin-top: 70px;
   }
   .search{
-      width: 100%;
+      width: auto;
       height: 60px;
       display: flex;
       margin-top: 20px;
@@ -63,11 +63,12 @@
   input[type="text"]::placeholder {
     color: #888; /* Remplacez #888 par la couleur souhaitée */
     font-style: italic; /* Vous pouvez également appliquer d'autres styles comme l'italique */
-    font-size: 25px;
+    font-size: 13px;
    
   }
   input[type="text"]{
     margin-top: 4px;
+    width: auto;
   }
    .select{
       width: 100px;
