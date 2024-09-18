@@ -1,0 +1,94 @@
+
+
+
+
+.nav2 {
+    width: 320px;
+     /* Couleur de fond pour la navigation */
+    padding: 10px;
+    margin:20px auto ;
+  }
+  
+  .box {
+    list-style-type: none; /* Supprimer les puces des listes */
+    padding: 0;
+    margin: 0;
+    margin: 0px auto;
+    display: flex; /* Disposer les éléments en ligne */
+    justify-content: space-around; /* Espacer les éléments */
+  }
+  
+  .box li {
+    margin: 0;
+  }
+  
+  .box a {
+    text-decoration: none; /* Supprimer le soulignement des liens */
+    color: #333; /* Couleur du texte */
+    padding: 10px 20px; /* Espacement autour du texte */
+    font-size: 16px; /* Taille du texte */
+    display: block; /* Le lien prend toute la largeur du conteneur li */
+  }
+  
+  .box a.active, .box a:hover {
+    background-color: #000; /* Fond noir pour le lien actif ou au survol */
+    color: #fff; /* Couleur du texte en blanc */
+    border-radius: 25px; /* Coins arrondis */
+  }
+
+  .carret{
+    width: 50%;
+    height: 70px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .XX{
+    color: red;
+    font-size: 30px;
+
+  }
+
+  .carde{
+    width: 80%;
+    height: auto;
+    min-height: 100px;
+    /* background-color: red; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+
+  .image{
+    width: 50%;
+    height: 350px;
+    /* background-color: #10be2a; */
+  }
+
+  .texts{
+    width: 50%;
+    height: 300px;
+    /* background-color: #0709b0; */
+    padding: 20px 10px;
+  }
+
+  .galery{
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* background-color: #10be2a; */
+    margin: 10px auto;
+    color: black;
+  }

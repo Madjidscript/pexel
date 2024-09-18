@@ -43,6 +43,7 @@
   }
   .dropdown-menu li a {
     color: black;
+    text-wrap: nowrap;
   }
   
   /* Afficher le sous-menu lors du hover */

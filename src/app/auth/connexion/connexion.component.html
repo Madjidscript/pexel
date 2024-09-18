@@ -1,0 +1,12 @@
+<div class="body">
+    <div class="login-card">
+        <form [formGroup]="data" (ngSubmit)="validation()">
+            <input type="text" placeholder="Username" formControlName="email">
+            <input type="password" placeholder="Password" formControlName="password">
+            <div class="button-container">
+                <button type="submit" class="login-btn">Login</button>
+                <a [routerLink]="['/auth/inscription']" class="register-btn">Register</a>
+            </div>
+        </form>
+    </div>
+</div>

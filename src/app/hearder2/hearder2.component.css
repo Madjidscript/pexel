@@ -55,6 +55,7 @@
 }
 .dropdown-menu li a {
     color: black;
+    text-wrap: nowrap;
   }
 
 /* Styles de la barre de recherche */
