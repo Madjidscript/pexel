@@ -3,27 +3,24 @@
 </div>
 <div class="content">
     
-    <form [formGroup]="data"> 
-        <b>Student name</b><br> <input type="text" name="uname"  placeholder="Student name" required formControlName="nom"><br><br>
-        <b>Address</b> <br><textarea name="addresss" placeholder="Enter address here" formControlName="address"></textarea><br><br>
-        <b>Gender :</b> <input type="radio" name="gender" value="Male" formControlName="choixRadio" >Male<input type="radio" name="gender" value="femelle" formControlName="choixRadio">Female<br>
+    <form [formGroup]="data" (ngSubmit)="validation()"> 
+        <b>Student name</b><br> <input type="text" name="nom"  placeholder="Student name" required formControlName="nom"><br><br>
+        <b>Address</b> <br><textarea name="address" placeholder="Enter address here" formControlName="address"></textarea><br><br>
+        <b>Gender :</b> <input type="radio" name="gender" value="Male" formControlName="gender" >Male<input type="radio" name="gender" value="femelle" formControlName="gender">Female<br>
         <br>
         <b>Department</b>  
-        <select name="dept" formControlName="dept" *ngFor="let dept of depatement">
-            <option value="Select" selected>Select Department</option>	
-            <option value={{dept}} selected> {{dept}} </option>			
+        <select name="dept" formControlName="dept" >
+          
+            <option *ngFor="let dept of depatement" [value]="dept" > {{dept}} </option>			
             
-        </select>
+        </select> <br>
         <b>Year</b>
-        <select name="yr" formControlName="yr" *ngFor="let yr of year" >
-            <option value={{yr}} selected> {{yr}} </option>				
-            <option value="1">1</option>
+        <select name="yr" formControlName="yr"  >
+            <option *ngFor="let yr of year" [value]="yr" > {{yr}} </option>				
+           
             
         </select><br><br>
-        <b>Interested Post:</b><br> <input type="checkbox" name="Event managemenr">Event manager
-        <input type="checkbox" name="Event managemenr" value="Joint event manager">Joint event manager
-        <input type="checkbox" name="Event managemenr" value="Sports secretary">Sports secretary
-        <input type="checkbox" name="Event managemenr" value="Discipline Committee">Discipline Committee
+        <input type="file" (change)="selectFule($event)">
         <br><br>
         <input type="submit" name="submit" value="Register">
         <input type="reset" name="reset" value="Cancel">

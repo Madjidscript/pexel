@@ -3,11 +3,12 @@ import { HearderComponent } from '../../hearder/hearder.component';
 import { GaleryComponent } from '../../galery/galery.component';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { FooterComponent } from '../../footer/footer.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HearderComponent,RouterModule,GaleryComponent,CommonModule],
+  imports: [HearderComponent,RouterModule,GaleryComponent,CommonModule,FooterComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

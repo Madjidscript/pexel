@@ -163,3 +163,12 @@
       border-radius: 25px; /* Coins arrondis */
     }
     
+    .icone{
+      width: 30%;
+      height: 20px;
+      /* background-color: rebeccapurple; */
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 8px;
+      color: black;
+    }

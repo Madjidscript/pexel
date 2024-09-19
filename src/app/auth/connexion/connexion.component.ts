@@ -23,7 +23,7 @@ constructor( private fb:FormBuilder ,private router:Router){
 
 validation(){
   console.log("papapapap")
-  console.log("mon dataaaaa",this.data.value)
+  // console.log("mon dataaaaa",this.data.value)
   if(this.data.valid){
    
     console.log("mon dataaaaa",this.data.value)
