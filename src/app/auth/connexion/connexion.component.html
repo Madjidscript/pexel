@@ -1,12 +1,40 @@
+<app-hearder></app-hearder>
+
 <div class="body">
-    <div class="login-card">
-        <form [formGroup]="data" (ngSubmit)="validation()">
-            <input type="text" placeholder="Username" formControlName="email">
-            <input type="password" placeholder="Password" formControlName="password">
-            <div class="button-container">
-                <button type="submit" class="login-btn">Login</button>
-                <a [routerLink]="['/auth/inscription']" class="register-btn">Register</a>
-            </div>
-        </form>
-    </div>
+   
+
+<div class="card">
+    <h3>C’est un plaisir de vous revoir !</h3>
+   <div class="container-fluid pr">
+    <div class="d-grid gap-2 col-8 ">
+        <button class="btn btn-outline-light" type="button"><i class="fab fa-google" ></i>  se connecter avec google</button>
+      </div>
+      <div class="d-grid gap-2 d-md-block d-flex">
+        <button class="btn btn-outline-ligth gap-2" type="button" style="margin-right: 5px;" ><i class="fab fa-apple"></i></button>
+        <button class="btn btn-outline-light gap-2" type="button"><i class="fab fa-facebook"></i></button>
+      </div>
+   </div>
+   <p style="color: #ccc; margin-top: 20px;">Ou identifiez-vous avec votre adresse e-mail.</p>
+
+   <div class="mb-3 col-12">
+    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+   </div>
+
+   <div class="mb-3 col-12">
+    <label for="exampleFormControlInput1" class="form-label">Mot de passe</label>
+    <input type="password" class="form-control" id="exampleFormControlInput1" placeholder=".........">
+   </div>
+
+ <div class="lien"> <a href="#" class="btn btn-outline-light btn-lg " tabindex="-1" role="button" aria-disabled="true">Mot de pass oublié</a></div>
+
+
+ <div class="d-grid gap-2 col-sm-10">
+    <button class="btn btn-primary  val" type="button">Se connecter</button>
+  </div>
+  
+</div>
+
+
+   
 </div>

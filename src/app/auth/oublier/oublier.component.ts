@@ -1,17 +1,13 @@
 import { Component } from '@angular/core';
 import { HearderComponent } from '../../hearder/hearder.component';
 
-
 @Component({
-  selector: 'app-connexion',
+  selector: 'app-oublier',
   standalone: true,
   imports: [HearderComponent],
-  templateUrl: './connexion.component.html',
-  styleUrl: './connexion.component.css'
+  templateUrl: './oublier.component.html',
+  styleUrl: './oublier.component.css'
 })
-export class ConnexionComponent {
-
-
-
+export class OublierComponent {
 
 }
