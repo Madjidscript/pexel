@@ -1,58 +1,82 @@
-.body {
+.box{
     width: 100%;
-    height: 800px;
-    background-color: black;
-    scroll-behavior: hidden;
+    height: 100vh;
+    /* background-color: red; */
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
+}
+input{
+    background-color: rgb(240, 238, 238);
 }
 
-.card {
-    width: 30%;
-    height: 60%; /* Ajout d'une hauteur maximale */
-    padding: 10px;
+.card{
+    width: 500px;
+    height: auto;
     background-color: #fff;
-    position: relative;
-    z-index: 10;
-    overflow-y: auto; /* Pour permettre le défilement si le contenu dépasse la hauteur */
-    display: flex; /* Pour centrer le contenu de la carte si nécessaire */
-   
+    display: block;
     align-items: center;
-    border-radius: 25px;
+    justify-content: center;
+    padding: 20px;
 }
-.pr{
-    /* border: 1px solid black; */
-    height: 40px;
+
+.child2{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 32px;
+}
+.champs{
+    margin-bottom: 15px;
+}
+.select{
+    width: 130px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.rond{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 50%;
+}
+.radio{
+    width: 130px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1Px solid rgb(230, 223, 223);
+    margin-left:18px;
     display: flex;
     justify-content: space-between;
 }
-button{
-    border: 1px solid #ccc;
-    color: black;
-    
-}
-button:hover{
-    background-color: #ccc;
-   
-}
-.lien{
-    width: 100%;
+
+form{
+    width: auto;
     height: auto;
-    color: black;
     display: flex;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
 }
-.lien a{
-    color: black;
-    border-bottom: 1px dashed #000;
-    line-height: auto;
+.valid{
+    width:100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
 }
-.val{
-    background-color: rgb(27, 87, 87);
-    margin-top: 30px;
-    color: white;
+a{
+    text-decoration: none;
 }
 
+.divider{
+    width: 100%;
+    height: 1px;
+    background-color:rgb(202, 199, 199);
+}

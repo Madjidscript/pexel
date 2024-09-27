@@ -5,7 +5,7 @@ import { InscriptionComponent } from './inscription/inscription.component';
 import { OublierComponent } from './oublier/oublier.component';
 
 const routes: Routes = [
-  {path:"",redirectTo:"connexion",pathMatch:"full"},
+  {path:"",redirectTo:"inscription",pathMatch:"full"},
   {path:"connexion",component:ConnexionComponent},
   {path:"inscription",component:InscriptionComponent},
   {path:"oublier",component:OublierComponent}

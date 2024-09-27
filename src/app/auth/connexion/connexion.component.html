@@ -1,40 +1,42 @@
-<app-hearder></app-hearder>
-
-<div class="body">
-   
-
-<div class="card">
-    <h3>C’est un plaisir de vous revoir !</h3>
-   <div class="container-fluid pr">
-    <div class="d-grid gap-2 col-8 ">
-        <button class="btn btn-outline-light" type="button"><i class="fab fa-google" ></i>  se connecter avec google</button>
-      </div>
-      <div class="d-grid gap-2 d-md-block d-flex">
-        <button class="btn btn-outline-ligth gap-2" type="button" style="margin-right: 5px;" ><i class="fab fa-apple"></i></button>
-        <button class="btn btn-outline-light gap-2" type="button"><i class="fab fa-facebook"></i></button>
-      </div>
-   </div>
-   <p style="color: #ccc; margin-top: 20px;">Ou identifiez-vous avec votre adresse e-mail.</p>
-
-   <div class="mb-3 col-12">
-    <label for="exampleFormControlInput1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-   </div>
-
-   <div class="mb-3 col-12">
-    <label for="exampleFormControlInput1" class="form-label">Mot de passe</label>
-    <input type="password" class="form-control" id="exampleFormControlInput1" placeholder=".........">
-   </div>
-
- <div class="lien"> <a href="#" class="btn btn-outline-light btn-lg " tabindex="-1" role="button" aria-disabled="true">Mot de pass oublié</a></div>
 
 
- <div class="d-grid gap-2 col-sm-10">
-    <button class="btn btn-primary  val" type="button">Se connecter</button>
-  </div>
+<div class="container-fluid box">
+  <div class="card">
   
-</div>
+    <div class="row row2">
+      <form action="" class="row"[formGroup]="con_registe" (ngSubmit)="validation($event)" >
+       
 
+        <div class="col-lg-12 champs">
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="numero mobile ou email" formControlName="contact">
+        </div>
 
-   
+        <div class="col-lg-12 champs">
+          <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="nouveau password" formArrayName=""password>
+        </div>
+
+      <div class="col-lg-12 ">
+        <div class="d-grid gap-2">
+          <button class="btn btn-primary btn-lg" type="submit" style="width: 100%;"[disabled]="con_registe.invalid" >se connecter</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 ">
+          <p style="text-align: center; margin-top: 15px;"><a href="">mot de pass oublier</a></p>
+        </div>
+      </div>
+
+      <div class="col-lg-12 divider">
+      </div>
+      <div class="col-lg-12 valid ">
+        <div class="d-grid gap-2">
+          <button class="btn btn-success btn-lg" type="button" style="width: 100%;">creer nouveau compte</button>
+        </div>
+      </div>
+        
+      </form>
+    </div>
+  </div>
+
 </div>
