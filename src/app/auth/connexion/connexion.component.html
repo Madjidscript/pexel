@@ -4,7 +4,7 @@
   <div class="card">
   
     <div class="row row2">
-      <form action="" class="row"[formGroup]="con_registe" (ngSubmit)="validation($event)" >
+      <form action="" class="row"[formGroup]="con_registe" (ngSubmit)="login()" >
        
 
         <div class="col-lg-12 champs">
@@ -12,12 +12,12 @@
         </div>
 
         <div class="col-lg-12 champs">
-          <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="nouveau password" formArrayName=""password>
+          <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="nouveau password" formControlName="password" >
         </div>
 
       <div class="col-lg-12 ">
         <div class="d-grid gap-2">
-          <button class="btn btn-primary btn-lg" type="submit" style="width: 100%;"[disabled]="con_registe.invalid" >se connecter</button>
+          <button class="btn btn-primary btn-lg" type="submit" style="width: 100%;"[disabled]="con_registe.invalid"  >se connecter</button>
         </div>
       </div>
 
