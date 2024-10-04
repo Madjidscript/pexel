@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { AuthService } from '../../auth.service';
 import { ActivatedRoute, Router } from '@angular/router';
-import { userInfo } from 'os';
+
 
 @Component({
   selector: 'app-update',
@@ -64,14 +64,16 @@ export class UpdateComponent implements OnInit{
   }
 
 
-  update(id:any){
+  update(){
     if (this.register_form.valid) {
-      let body={
-        user_id:id
-      }
       let data = this.register_form.value
+      let body={
+        user_id:this.UserId,
+        ...data
+      }
+      
       console.log('Données envoyées:', data); 
-      this.api.update(body,data).subscribe({
+      this.api.update(body).subscribe({
         next:(response:any)=> {
           console.log('ma reponse de modif',response)
         },

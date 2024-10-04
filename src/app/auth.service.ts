@@ -35,14 +35,14 @@ export class AuthService {
     return this.http.post("http://127.0.0.1:5000/api/users/deleteuser", body, httpOptions);
   }
 
-  update(id:any,data:any){
+  update(data:any){
     const httpOptions = {
       headers: new HttpHeaders({
           'Content-Type': 'application/json',
           'Authorization': '' 
       })
   };
-    return this.http.post('http://127.0.0.1:5000/api/users/updateuser',id,data,)
+    return this.http.post('http://127.0.0.1:5000/api/users/updateuser',data,httpOptions)
   }
   
   
