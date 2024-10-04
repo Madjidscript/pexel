@@ -5,6 +5,8 @@ import { HomeComponent } from './home/home.component';
 import { PopulaireComponent } from './populaire/populaire.component';
 import { BlogComponent } from './blog/blog.component';
 import { LicenceComponent } from './licence/licence.component';
+import { UtilisateurComponent } from './utilisateur/utilisateur.component';
+import { UpdateComponent } from './update/update.component';
 
 const routes: Routes = [
   {path:"",component:AcceuilComponent,
@@ -13,7 +15,10 @@ const routes: Routes = [
       {path:"home",component:HomeComponent},
       {path:"populaire",component:PopulaireComponent},
       {path:"blog",component:BlogComponent},
-      {path:"licence",component:LicenceComponent}
+      {path:"licence",component:LicenceComponent},
+      {path:"user",component:UtilisateurComponent},
+      {path:"update/:id",component:UpdateComponent}
+
     ]
    
 

@@ -1,0 +1,139 @@
+
+<div class="container-fluid box">
+    <div class="card">
+      <div class="row row1">
+        <div class="col child1">
+          <h1>S'inscrire</h1>
+          <p>c'est simple et rapide</p>
+        </div>
+        <div class="col child2">
+          x
+        </div>
+      </div>
+  
+  
+      <div class="row row2">
+        <form action="" class="row"  [formGroup]="register_form" (ngSubmit)="update(UserId)" >
+          <div class="col-lg-6 champs">
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="prenom" formControlName="firstname">
+          </div>
+  
+          <div class="col-lg-6 champs">
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="nom de famille" formControlName="lastname" >
+          </div>
+  
+          <div class="col-lg-12 champs">
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="numero mobile ou email" formControlName="contact">
+          </div>
+  
+          <div class="col-lg-12 champs">
+            <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="nouveau password"formControlName="password">
+          </div>
+           <div class="row">
+            <span class="col-lg-5">date de naissance</span> <span class="col-lg-1"><P class="rond">?</P></span>
+           </div>
+          <div class="col-lg-4 champs">
+            <select  id="" class="select" formControlName="day">
+              <option value="01">01</option>
+              <option value="02">02</option>
+              <option value="03">03</option>
+              <option value="04">04</option>
+              <option value="05">05</option>
+              <option value="06">06</option>
+              <option value="07">07</option>
+              <option value="08">08</option>
+              <option value="09">09</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">22</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="32">31</option>
+            </select>
+          </div>
+  
+          <div class="col-lg-4 champs">
+             <select name="mois" id="" class="select" formControlName="month" >
+              <option value="janvier">janvier</option>
+              <option value="février">février</option>
+              <option value="mars">mars</option>
+              <option value="avril">avril</option>
+              <option value="mai">mai</option>
+              <option value="juin">juin</option>
+              <option value="juillet">juillet</option>
+              <option value="aôut">aôut</option>
+              <option value="septenbre">septembre</option>
+              <option value="octobre">octobre</option>
+              <option value="octobre">novenbre</option>
+              <option value="octobre">decenbre</option>
+            </select>
+          </div>
+  
+          <div class="col-lg-4 champs">
+             <select name="annee" id="" class="select" formControlName="years">
+              <option value="2010">2010</option>
+              <option value="2011">2011</option>
+              <option value="2012">2012</option>
+              <option value="2013">2013</option>
+              <option value="2014">2014</option>
+              <option value="2015">2015</option>
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+              <option value="2018">2018</option>
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
+              <option value="2024">2024</option>
+  
+            </select>
+          </div>
+  
+         
+  
+          <div class="row">
+            <span class="col-lg-2">genre</span> <span class="col-lg-1 "><P class="rond">?</P></span>
+           </div>
+  
+          <div class="col-lg-4 champs radio">
+           Homme <input type="radio" name="genre" value="homme" formControlName="genre">
+          </div>
+  
+          <div class="col-lg-4 champs radio">
+           Femme <input type="radio" name="genre" value="Femme" id=""formControlName="genre">
+          </div>
+  
+          <div class="col-lg-4 champs  radio">
+           Personnalisé <input type="radio" name="genre" value="Personnalisé" id=""formControlName="genre">
+          </div>
+  
+        <div class="col-lg-12">
+          <p style="padding: 20px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit quo a nostrum omnis libero odit voluptates. 
+            Recusandae beatae, eos earum officia, optio nesciunt aliquid accusantium ipsum pariatur dolorem itaque nihil?</p>
+        </div>
+  
+        <div class="col-lg-4  valid">
+          <button type="submit" class="btn btn-success btn-lg" [disabled]="register_form.invalid" >s'inscrire</button>
+        </div>
+          
+        </form>
+      </div>
+    </div>
+  
+  </div>

@@ -1,0 +1,23 @@
+<table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nom</th>
+        <th>Email</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody *ngIf="data">
+      <tr *ngFor="let ele of data">
+        <td> {{ele.user_id}} </td>
+        <td> {{ele.firstname}} </td>
+        <td> {{ele.lastname}} </td>
+        <td>
+          <button class="edit-btn" (click)="edit(ele.user_id)">Éditer</button>
+          <button class="delete-btn"(click)="delete(ele.user_id)" >Supprimer</button>
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>
+  
